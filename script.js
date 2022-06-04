@@ -5,7 +5,6 @@ btn.addEventListener('click', function() {
 });
 
 function makeGrid(col, row){
-    container.rem
     container.style.gridTemplateColumns = `repeat(${col}, 1fr)`;
     container.style.gridTemplateColumns = `repeat(${row}, 1fr)`;
     for(x = 0; x < (col*row); x++){
