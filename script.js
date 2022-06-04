@@ -18,6 +18,12 @@ function makeGrid(col, row){
 
 function newGrid(){
     let newVal = prompt("How many rows and columns would you like the new grid to have? (MAX: 100)");
+
+    if(newVal > 100 || newVal < 1){
+        alert("Invalid value");
+        return;
+    }
+
     while(container.childElementCount){
         container.removeChild(container.firstChild);
     }
