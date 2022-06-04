@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-gap: 0px;
+    height: 800px;
+    width: 800px;
+}
+
+#grid-item{
+    border: solid black;
+    border-width: .5px;
+    background-color: whitesmoke;
+}
+
+#reset{
+    display: flex;
+    justify-content: center;
+    height:16px;
+    width: 64px;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
