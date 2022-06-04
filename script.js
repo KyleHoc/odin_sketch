@@ -5,6 +5,7 @@ btn.addEventListener('click', function() {
 });
 
 function makeGrid(col, row){
+    container.rem
     container.style.gridTemplateColumns = `repeat(${col}, 1fr)`;
     container.style.gridTemplateColumns = `repeat(${row}, 1fr)`;
     for(x = 0; x < (col*row); x++){
@@ -18,8 +19,10 @@ function makeGrid(col, row){
 
 function newGrid(){
     let newVal = prompt("How many rows and columns would you like the new grid to have? (MAX: 100)");
+    while(container.childElementCount){
+        container.removeChild(container.firstChild);
+    }
     makeGrid(newVal, newVal);
 }
-
 
 makeGrid(64, 64);
